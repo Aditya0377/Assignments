@@ -1,0 +1,39 @@
+body {
+    font-family: "Arial";
+    font-size: 14;
+    color: navy;
+    background-color: rgb(255, 204, 255);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Arial Black", "Arial";
+    letter-spacing: 3px;
+    text-decoration-line: underline overline;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hot {
+    letter-spacing: 6px;
+    color: hotpink;
+    font-style: italic;
+    background-color: yellow;
+}
+
+.cold {
+    font-style: bold;
+    color: rgb(4, 203, 253);
+    background-color: rgb(153, 255, 255);
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 2px solid red;
+
+}
