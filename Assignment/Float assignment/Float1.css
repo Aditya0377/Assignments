@@ -1,0 +1,51 @@
+.div1,
+.footer {
+    width: 100%;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+}
+
+.cont {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.MID {
+    width: 30%;
+    height: 10%;
+    float: left;
+
+}
+
+ul {
+
+    list-style: none;
+    padding: 5px;
+
+}
+
+li {
+    padding: 10px;
+    background-color: rgb(50, 180, 229);
+    color: white;
+    margin-bottom: 2px;
+
+}
+
+li:hover {
+    background-color: rgb(45, 148, 185);
+}
+
+.sum {
+    padding: 20px;
+    float: left;
+}
+
+.footer {
+    position: absolute;
+    top: 300px;
+    padding: 40px;
+}
