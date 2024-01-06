@@ -1,0 +1,90 @@
+.navbar {
+    width: 100%;
+    background-color: grey;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li:hover {
+    background-color: rgb(80, 79, 79);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(76, 175, 80);
+}
+
+.cont {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.list ul li {
+    background-color: rgb(218, 215, 215);
+    margin-bottom: 3px;
+    padding: 6px;
+
+}
+
+.list ul li:hover {
+    color: white;
+    background-color: rgb(65, 114, 159);
+}
+
+.content {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 80%;
+}
+
+.City {
+    text-align: center;
+    margin: 17px;
+    width: 90%;
+    background-color: rgb(33, 151, 242);
+    color: white;
+    padding: 28px;
+}
+
+.head {
+    padding-left: 18px;
+}
+
+p {
+    padding-left: 18px;
+}
+
+.footer {
+    width: 96.3%;
+    padding: 35px;
+    clear: left;
+    background-color: grey;
+    color: white;
+}
