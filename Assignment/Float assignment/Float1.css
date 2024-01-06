@@ -39,13 +39,13 @@ li:hover {
     background-color: rgb(45, 148, 185);
 }
 
+/* 
 .sum {
     padding: 20px;
     float: left;
-}
+} */
 
 .footer {
-    position: absolute;
-    top: 300px;
+    clear: left;
     padding: 40px;
 }
