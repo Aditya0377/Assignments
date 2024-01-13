@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: black
 }
 
 .container {
@@ -73,7 +74,12 @@ a {
     border: 1px solid grey;
     color: rgb(110, 107, 116);
     padding: 17px;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 40px;
+    text-transform: uppercase;
 }
 
 .Lightbutton:hover {
@@ -92,6 +98,7 @@ a {
 
 .flex {
     color: white;
+    ;
 }
 
 .content {
@@ -133,7 +140,54 @@ a {
     width: 150px;
 }
 
+.Darkbutton:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 .img1 {
     margin-bottom: -160px;
     margin-left: 150px;
+}
+
+.third-container {
+    background-color: white;
+    padding-top: 200px;
+    padding-left: 390px;
+    margin: 0px;
+    padding-bottom: 200px;
+}
+
+.img2 {
+    width: 520px;
+}
+
+.third {
+    margin-left: 100px;
+    padding-top: 100px;
+
+}
+
+.knowmore {
+    width: 135px;
+    margin: 0px;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.insure {
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.h3 {
+    width: 490px;
+    font-size: 18px;
+    color: grey;
+    font-family: "karla", sans-serif;
+    line-height: 30px;
+    margin: 20px 0px;
+    letter-spacing: 1px;
 }
