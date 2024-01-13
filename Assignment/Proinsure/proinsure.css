@@ -1,68 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 .container {
-    margin-top: 0px;
-    margin-left: 20%;
-    margin-right: 21%;
+    padding: 16px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.Header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
-    width: 58%;
-    position: fixed;
-}
+    padding-left: 20%;
+    padding-right: 20%;
 
-ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-}
-
-li {
-    font-size: 18px;
-    padding: 15px;
-    margin-left: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-a {
-    text-decoration: none;
-    color: rgb(110, 107, 116);
-}
-
-a .Viewplans:hover {
-    color: white;
 
 }
 
 .logo {
     font-size: 35px;
+    font-weight: 550;
     font-family: "DM Serif Display", serif;
-    font-weight: 600;
-    color: rgb(44, 38, 65);
 }
 
-.home,
-.About,
-.Contact {
+.logo:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
     color: rgb(110, 107, 116);
-    font-weight: 550;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 40px;
     text-transform: uppercase;
 }
 
-.Viewplans {
+.navbar a:hover {
+    color: black;
+}
+
+.Lightbutton {
+    border: 1px solid grey;
     color: rgb(110, 107, 116);
-    font-weight: 550;
-    text-transform: uppercase;
-    border: 1px solid;
-    border-radius: 3px;
+    padding: 17px;
+    border-radius: 5px;
 }
 
-a:hover {
-    color: rgb(36, 35, 35);
-}
-
-.Viewplans:hover {
+.Lightbutton:hover {
     background-color: rgb(44, 38, 65);
     color: white;
     cursor: pointer;
+}
+
+.sec-container {
+    background-color: #2d2640;
+    padding-top: 150px;
+    padding-left: 400px;
+    margin: 0;
+    height: 600px;
+}
+
+.content {
+    display: flex;
+}
+
+.line {
+    width: 200px;
+    height: 2px;
+    background-color: #bcb8c4;
+    margin-bottom: 30px;
 }
