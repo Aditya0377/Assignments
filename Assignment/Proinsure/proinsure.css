@@ -286,7 +286,7 @@ a {
     background-color: white;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 25px;
 }
 
 .hr {
@@ -325,4 +325,34 @@ a {
 .icon:hover {
     color: black;
     cursor: pointer;
+}
+
+.z {
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.navls {
+    color: #6e6b74;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 20px;
+}
+
+.navls a:hover {
+    color: black;
+}
+
+.footer {
+    display: flex;
+    background-color: #2d2640;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cac9c8;
+    font-size: 19px;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
