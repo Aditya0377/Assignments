@@ -4,11 +4,6 @@
     padding: 0px;
 }
 
-body {
-    background-image: url(assests/image\ 1.jpg);
-    background-repeat: no-repeat;
-}
-
 .header {
     position: fixed;
     top: 0px;
@@ -53,67 +48,92 @@ ul {
     text-transform: uppercase;
 }
 
-
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
-    height: 820px;
-    opacity: 0.8;
-
+.img-container {
+    background-image: url(assests/image\ 1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 990px;
+    position: relative;
 }
 
-.img-content {
-    font-size: 35px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    width: 800px;
+.gradient-container {
+    background-image: linear-gradient(to top, rgba(248, 71, 124, 0.8) 0%, rgba(255, 159, 115, 0.8) 100%);
+    position: absolute;
+    width: 100%;
+    height: 990px;
+}
+
+.grad-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grad-content h1 {
+    margin-top: 50px;
     text-align: center;
     color: white;
-    opacity: 1;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    font-weight: 900;
 }
 
 .button {
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: auto;
+    padding: 15px 25px;
+    font-size: 13px;
+    color: grey;
     font-weight: 600;
-    text-align: center;
     letter-spacing: 1px;
-    width: 200px;
-    border-radius: 50px;
-    opacity: 1;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .button:hover {
-    cursor: pointer;
     color: white;
     background-color: black;
-    transition: all 0.4s ease-out 0s;
+    cursor: pointer;
+    transition: ease-in 0.2s;
 }
 
-.first-container {
+.threeimg-container {
+    margin-top: 130px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+
 }
 
-.head {
-    font-size: 18px;
+.head-content {
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .lorem1 {
-    color: rgb(118, 119, 118);
+    margin-top: 20px;
+    color: rgb(161, 161, 161);
     text-align: center;
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    word-spacing: 3px;
+
+}
+
+.three {
+    margin-top: 20px;
+    display: flex;
+}
+
+.content-gradient {
+    background-image: linear-gradient(to top, rgba(248, 71, 124, 0.8) 0%, rgba(255, 159, 115, 0.8) 100%);
+
 }
