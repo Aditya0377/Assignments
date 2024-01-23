@@ -133,7 +133,81 @@ ul {
     display: flex;
 }
 
-.content-gradient {
-    background-image: linear-gradient(to top, rgba(248, 71, 124, 0.8) 0%, rgba(255, 159, 115, 0.8) 100%);
+.imgcont {
+    margin-top: 40px;
+}
 
+.imgcont img {
+    max-width: 100%;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.four {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgb(35, 34, 35);
+    width: 100%;
+    display: flex;
+
+}
+
+
+.four img {
+
+    height: 100%;
+}
+
+.fourcont {
+    margin: 200px 100px;
+
+}
+
+.fourcont h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+    font-size: 39px;
+    background-image: linear-gradient(to top, rgba(248, 71, 124, 0.8) 0%, rgba(255, 159, 115, 0.8) 100%);
+    background-clip: text;
+    color: transparent;
+
+}
+
+h1::selection {
+    background-color: rgb(246, 67, 127);
+    color: white;
+}
+
+p::selection {
+    background-color: rgb(246, 67, 127);
+    color: white;
+}
+
+.fourcont p {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 480px;
+    color: rgb(97, 96, 96);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fbutton {
+    margin-top: 40px;
+    border: 1px solid grey;
+    text-transform: uppercase;
+    border-radius: 30px;
+    width: 275px;
+    padding: 12px 28px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.fbutton:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
 }
