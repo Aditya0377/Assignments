@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.bg-img {
+    background-image: url(assets/img_nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 550px;
+    height: 600px;
+    padding: 20px 25px;
+}
+
+.form h1 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h3 {
+    font-size: 30px;
+}
+
+input {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    border: solid transparent;
+    height: 90px;
+    font-size: 30px;
+}
+
+input:focus {
+    border: solid transparent;
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(5, 185, 119);
+    padding: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(4, 170, 109);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 5px;
+}
