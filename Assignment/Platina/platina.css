@@ -137,6 +137,31 @@ ul {
     margin-top: 40px;
 }
 
+.overlay {
+    background-image: linear-gradient(to top, rgba(248, 71, 124, 0.8) 0%, rgba(255, 159, 115, 0.8) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+
+.imgcont:hover .overlay {
+    opacity: 0.8;
+    height: 100%;
+}
+
 .imgcont img {
     max-width: 100%;
     margin: 15px;
@@ -210,4 +235,65 @@ p::selection {
     color: black;
     background-color: white;
     cursor: pointer;
+}
+
+.five {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.icon-content {
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+.icon-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rowcont {
+    margin-right: 60px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.rowhead {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+
+.rowlo {
+    margin-top: 20px;
+    color: rgb(161, 158, 158);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 600;
+}
+
+.lnricon span {
+    font-size: 35px;
+    color: rgb(161, 158, 158);
+    background-clip: text;
+}
+
+.lnricon:hover span {
+    color: transparent;
+    background-image: linear-gradient(to top, rgba(248, 71, 124, 0.8) 0%, rgba(255, 159, 115, 0.8) 100%);
+
 }
