@@ -364,7 +364,7 @@ p::selection {
 .formblock {
     padding: 150px 100px;
     width: 1100px;
-    height: 700px;
+    height: 750px;
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
 }
 
@@ -414,66 +414,4 @@ select:focus {
 
 .formincont {
     display: flex;
-}
-
-textarea {
-    color: rgb(164, 162, 162);
-    border: 1px solid rgb(209, 205, 205);
-    padding: 10px;
-    margin-top: 80px;
-}
-
-textarea:focus {
-    border: transparent;
-    outline: 1px solid rgb(108, 164, 223);
-}
-
-.buttoncont {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.buttonL {
-    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
-    width: 180px;
-    padding: 12px;
-    text-align: center;
-    border-radius: 50px;
-}
-
-.buttonL:hover {
-    cursor: pointer;
-}
-
-.buttonL:hover i {
-    transform: translateX(15px);
-    transition: all 0.4s ease;
-}
-
-.eight {
-    background-color: #f9f9ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 150px;
-}
-
-.eightcont {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-left: 80px;
-}
-
-.head {
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.elor {
-    line-height: 25px;
 }

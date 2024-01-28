@@ -466,14 +466,10 @@ textarea:focus {
 .eightcont {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .head {
     font-size: 17px;
     font-weight: 600;
-}
-
-.elor {
-    line-height: 25px;
 }
