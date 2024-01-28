@@ -403,11 +403,21 @@ input[type="date"]:valid:before {
 }
 
 .inputt {
-    width: 200px;
+    width: 210px;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    padding: 10px;
-    color: grey;
+    padding: 9px;
+    color: rgb(164, 162, 162);
     border: 1px solid rgb(209, 205, 205);
+}
+
+input:focus {
+    border: transparent;
+    outline: 1px solid rgb(108, 164, 223);
+}
+
+select:focus {
+    border: transparent;
+    outline: 1px solid rgb(108, 164, 223);
 }
