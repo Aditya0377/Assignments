@@ -484,13 +484,12 @@ textarea:focus {
     justify-content: center;
     background-color: #232223;
     font-family: Arial, Helvetica, sans-serif;
-    height: 450px;
+    height: 400px;
     flex-direction: column;
 
 }
 
 .footerucont {
-    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -564,17 +563,7 @@ textarea:focus {
 }
 
 .footertext {
-    margin-top: 50px;
     width: 100%;
     text-align: center;
-    color: rgb(101, 101, 101);
-    font-size: 15px;
-}
-
-.footertext span {
-    color: #f62e71;
-}
-
-.span:hover {
-    cursor: pointer;
+    color: white;
 }

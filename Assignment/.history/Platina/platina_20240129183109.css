@@ -484,20 +484,18 @@ textarea:focus {
     justify-content: center;
     background-color: #232223;
     font-family: Arial, Helvetica, sans-serif;
-    height: 450px;
-    flex-direction: column;
+    height: 400px;
 
 }
 
 .footerucont {
-    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .footercont {
-    margin-top: 0px;
+    margin-top: 00px;
     text-align: left;
     margin-right: 30px;
 }
@@ -537,7 +535,7 @@ textarea:focus {
 }
 
 .footerRcont {
-    margin-top: 00px;
+    margin-top: 80px;
     text-align: left;
     margin-right: 30px;
     margin-left: 60px;
@@ -564,17 +562,6 @@ textarea:focus {
 }
 
 .footertext {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    color: rgb(101, 101, 101);
-    font-size: 15px;
-}
 
-.footertext span {
-    color: #f62e71;
-}
-
-.span:hover {
-    cursor: pointer;
+    color: white;
 }

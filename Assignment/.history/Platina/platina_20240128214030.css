@@ -484,33 +484,30 @@ textarea:focus {
     justify-content: center;
     background-color: #232223;
     font-family: Arial, Helvetica, sans-serif;
-    height: 450px;
-    flex-direction: column;
-
+    height: 400px;
 }
 
 .footerucont {
-    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .footercont {
-    margin-top: 0px;
+    margin-top: 80px;
     text-align: left;
     margin-right: 30px;
 }
 
 .foothead {
     color: white;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .lorem3 {
-    color: rgb(101, 101, 101);
+    color: rgb(74, 73, 73);
     line-height: 20px;
     font-size: 15px;
 }
@@ -525,56 +522,14 @@ textarea:focus {
     border: solid transparent;
 }
 
-.footercont .fa-long-arrow-right {
-    font-size: 15px;
+.footercont i {
+    font-weight: 200;
+    font-size: 20px;
     text-align: center;
     color: white;
     background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
     width: 40px;
     height: 40px;
-    padding: 11px;
+    padding: 7px;
 
-}
-
-.footerRcont {
-    margin-top: 00px;
-    text-align: left;
-    margin-right: 30px;
-    margin-left: 60px;
-}
-
-.footimg img {
-    margin: 5px;
-}
-
-.socialicons i {
-    color: rgb(205, 203, 203);
-    font-size: 13px;
-    text-align: left;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-.socialicons i:hover {
-    cursor: pointer;
-    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
-    background-clip: text;
-    color: transparent;
-
-}
-
-.footertext {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    color: rgb(101, 101, 101);
-    font-size: 15px;
-}
-
-.footertext span {
-    color: #f62e71;
-}
-
-.span:hover {
-    cursor: pointer;
 }
