@@ -292,25 +292,16 @@ a {
 .cards {
     margin-top: -100px;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.col1 {
-    display: flex;
-    width: 100%;
 }
 
 .cardcont {
     position: relative;
-    width: 25%;
+    width: 280px;
     height: 380px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-    margin-bottom: 80px;
-    transform-style: preserve-3d;
-    transition: all 0.4s ease;
+
 }
 
 .card {
@@ -319,6 +310,7 @@ a {
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.4s ease;
+    border-radius: 20px;
     border-radius: 20px;
 }
 
@@ -367,8 +359,4 @@ a {
     font-size: 19px;
     font-weight: 700;
 
-}
-
-.space {
-    margin-left: 100px;
 }

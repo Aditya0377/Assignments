@@ -1,0 +1,26 @@
+.flip-card {
+    width: 200px;
+    height: 150px;
+    perspective: 1000px;
+    /* Creates 3D perspective */
+    position: relative;
+    /* Enables layering */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Hide back faces visually */
+    transition: transform 0.5s ease-in-out;
+    /* Transition speed and easing */
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    /* Initially rotated to hide */
+}

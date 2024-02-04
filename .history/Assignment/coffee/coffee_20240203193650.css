@@ -290,6 +290,7 @@ a {
 }
 
 .cards {
+    position: relative;
     margin-top: -100px;
     padding: 30px;
     display: flex;
@@ -297,12 +298,13 @@ a {
 }
 
 .col1 {
+
     display: flex;
     width: 100%;
 }
 
 .cardcont {
-    position: relative;
+    position: absolute;
     width: 25%;
     height: 380px;
     overflow: hidden;
@@ -322,7 +324,7 @@ a {
     border-radius: 20px;
 }
 
-.card:hover {
+.card:hover .cardcont {
     transform: rotateY(180deg);
 }
 
