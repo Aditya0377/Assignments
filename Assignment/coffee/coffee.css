@@ -276,6 +276,7 @@ a {
 }
 
 .roundbutton {
+    border: transparent;
     border-radius: 100%;
     margin-left: 40px;
     box-shadow: 2px 2px 8px rgb(163, 177, 198, 0.6), -2px -2px 12px rgba(255, 255, 255, 0.5);

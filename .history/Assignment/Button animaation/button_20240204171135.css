@@ -1,0 +1,33 @@
+.rate-us {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rectangle {
+    width: 5px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.rectangle:hover {
+    border-color: #eed882;
+
+}
+
+.rectangle[data-selected="true"] {
+    border-color: #ffcc00;
+    /* Adjust color as needed */
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

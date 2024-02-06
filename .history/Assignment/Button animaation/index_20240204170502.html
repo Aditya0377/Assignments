@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button animation</title>
+    <link rel="stylesheet" href="button.css">
+    <script src="https://kit.fontawesome.com/edd85780d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="rate-us">
+        <span class="rectangle" data-value="1" data-selected="false"></span>
+        <span class="rectangle" data-value="2" data-selected="false"></span>
+        <span class="rectangle" data-value="3" data-selected="false"></span>
+        <span class="rectangle" data-value="4" data-selected="false"></span>
+        <span class="rectangle" data-value="5" data-selected="false"></span>
+        <button class="submit-button">Submit Rating</button>
+    </div>
+
+
+    <script>
+        const rectangles = document.querySelectorAll('.rectangle');
+        const submitButton = document.querySelector('.submit-button');
+
+        rectangles.forEach(rectangle => {
+            rectangle.addEventListener('click', () => {
+                const value = rectangle.dataset.value;
+
+                rectangles.forEach(r => r.dataset.selected = "false"); // Deselect all
+                rectangle.dataset.selected = "true"; // Select clicked one
+            });
+        });
+
+        submitButton.addEventListener('click', () => {
+            // Handle submitting the selected rating (e.g., send to server)
+            const selectedValue = document.querySelector('.rectangle[data-selected="true"]').dataset.value;
+            console.log("Submitted rating:", selectedValue);
+        });
+
+    </script>
+</body>
+
+</html>
