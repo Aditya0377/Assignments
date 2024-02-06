@@ -45,12 +45,6 @@
         <p id="third"></p>
         <button id="thirdB" onclick="thirdfunc()">Click HERE</button>
     </div>
-    <div class="cont">
-        <p>CLick here to print the taable from 2 to 10</p>
-        <p id="fourth"></p>
-        <button id="fourthB" onclick="fourthfunc()">Click HERE</button>
-    </div>
-
 
     <script>
         const arr = [];
@@ -75,14 +69,6 @@
             for (let i = 1; i <= 10; i++) {
                 const product = 7 * i;
                 document.getElementById("third").innerHTML = (`${7} x ${i} = ${product}`);
-            }
-        }
-        function fourthfunc() {
-
-            for (let i = 1; i <= 10; i++) {
-                for (let j = 1; j <= 10; j++) {
-                    console.log(i + "*" + j + " = " + i * j)
-                }
             }
         }
     </script>
