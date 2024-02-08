@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #e1e5ed;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            height: 400px;
+
+        }
+
+        .line {
+            margin-left: 10px;
+            border: 0.5px solid rgb(67, 66, 66);
+            height: 1px;
+            width: 800px;
+        }
+
+        .linef {
+            margin-left: 30px;
+            border: 0.5px solid rgb(67, 66, 66);
+            height: 1px;
+            width: 800px;
+        }
+
+        .roundbutton {
+            border: transparent;
+            border-radius: 100%;
+            margin-left: 40px;
+            box-shadow: 2px 2px 8px rgb(163, 177, 198, 0.6), -2px -2px 12px rgba(255, 255, 255, 0.5);
+        }
+
+        .roundbutton img {
+            width: 80px;
+        }
+
+        .roundbutton:hover {
+            cursor: pointer;
+        }
+
+        .active {
+            border: transparent;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        .cards {
+            margin-top: -100px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display {
+            display: none;
+        }
+
+        .col1 {
+            display: flex;
+            width: 100%;
+        }
+
+        .cardcont {
+            position: relative;
+            width: 25%;
+            height: 380px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+            margin-bottom: 80px;
+            transform-style: preserve-3d;
+            transition: all 0.4s ease;
+        }
+
+        .card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.4s ease;
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .cardfront {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+
+        }
+
+        .cardimg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+        }
+
+        .cardback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            color: black;
+            transform: rotateY(180deg);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cardback div {
+            text-align: center;
+        }
+
+        .bhead {
+
+            color: #bd1220;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+
+        }
+
+        .space {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button id="button1">Section 1</button>
+    <button id="button2">Section 2</button>
+    <br>
+    <div id="section1" class="section">Section 1 Content</div>
+    <div id="section2" class="section">Section 2 Content</div> -->
+    <div class="four">
+        <div class="option">
+            <div class="line"></div>
+            <button class="roundbutton" id="button1"><img src="assets/hotdrinks.png" alt=""></button>
+            <button class="roundbutton" id="button2"><img src="assets/snack.png" alt=""></button>
+            <div class="linef"></div>
+        </div>
+        <div class="cards section" id="section1">
+            <div class="col1">
+                <div class="cardcont">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card1.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">CAFFE AMERICANO</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardcont space">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card2.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">HOT COFFE</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardcont space">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card3.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">CREAM LATTE</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardcont space">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card4.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">ICED LATTE</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col1">
+                <div class="cardcont">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card5.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">COFFE SHOTS</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardcont space">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card6.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">HERBAL</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardcont space">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card7.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">HERBAL CHERRY</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardcont space">
+                    <div class="card">
+                        <div class="cardfront"><img src="assets/card 8.jpeg" class="cardimg"></div>
+                        <div class="cardback">
+                            <div class="bhead">FILTERED COFFE</div>
+                            <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                                Corrupti,
+                                dolores</div>
+                            <div class="bhead">₹ COST</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards section" id="section2">
+        <div class="col1">
+            <div class="cardcont">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card1.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">CAFFE AMERICANO</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardcont space">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card2.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">HOT COFFE</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcont space">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card3.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">CREAM LATTE</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cardcont space">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card4.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">ICED LATTE</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col1">
+            <div class="cardcont">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card5.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">COFFE SHOTS</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcont space">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card6.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">HERBAL</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcont space">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card7.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">HERBAL CHERRY</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcont space">
+                <div class="card">
+                    <div class="cardfront"><img src="assets/card 8.jpeg" class="cardimg"></div>
+                    <div class="cardback">
+                        <div class="bhead">FILTERED COFFE</div>
+                        <div class="lorem">Lorem ipsum dolor<br> sit amet consectetur<br> adipisicing elit.<br>
+                            Corrupti,
+                            dolores</div>
+                        <div class="bhead">₹ COST</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const sections = document.querySelectorAll(".section");
+
+        // Function to show a section and activate its button
+        function showSection(sectionId, buttonId) {
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById(sectionId).style.display = "block";
+            buttons.forEach(button => button.classList.remove("active"));
+            document.getElementById(buttonId).classList.add("active");
+        }
+
+        // Add click event listeners to buttons
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                const sectionId = `section${index + 1}`; // Get corresponding section ID
+                showSection(sectionId, button.id);
+            });
+        });
+
+        // Show section 1 initially (optional)
+        showSection("section1", "button1");
+    </script>
+</body>
+
+</html

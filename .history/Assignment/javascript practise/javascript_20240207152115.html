@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practise</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cont {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            background-color: brown;
+            color: rgb(176, 173, 173);
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <p>Click the button to get numbers from one to ten</p>
+        <p id="first"></p><br>
+        <button id="firstB" onclick="firstfunc()">CLICK HERE</button>
+    </div>
+    <div class="cont">
+        <p>Click here to print all the number odd numbers from 1 to 100</p>
+        <p id="second"></p>
+        <button id="secondB" onclick="seondFunc()">CLICK HERE</button>
+    </div>
+    <div class="cont">
+        <p>CLick here to print the taable of 7</p>
+        <p id="third"></p>
+        <button id="thirdB" onclick="thirdfunc()">Click HERE</button>
+    </div>
+    <div class="cont">
+        <p>CLick here to print the taable from 2 to 10</p>
+        <p id="fourth"></p>
+        <button id="fourthB" onclick="fourthfunc()">Click HERE</button>
+    </div>
+
+
+    <script>
+        const arr = [];
+        const arr2 = [];
+
+
+        function firstfunc() {
+            for (let i = 1; i <= 10; i++) {
+                arr.push(i);
+                document.getElementById("first").innerHTML = arr;
+
+            }
+        }
+        function seondFunc() {
+            for (let i = 1; i < 100; i += 2) {
+                arr2.push(i);
+                document.getElementById("second").innerHTML = arr2;
+
+            }
+        }
+        function thirdfunc() {
+            let text = "";
+            for (let i = 1; i <= 10; i++) {
+                text = 7 * i;
+                document.getElementById("third").innerHTML = ();
+            }
+        }
+        function fourthfunc() {
+
+            for (let i = 1; i <= 10; i++) {
+                for (let j = 1; j <= 10; j++) {
+                    console.log(i + "*" + j + " = " + i * j)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

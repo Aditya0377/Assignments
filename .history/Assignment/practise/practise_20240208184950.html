@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button1">Section 1</button>
+    <button id="button2">Section 2</button>
+    <br>
+    <div id="section1" class="section">Section 1 Content</div>
+    <div id="section2" class="section">Section 2 Content</div>
+
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const sections = document.querySelectorAll(".section");
+
+        // Function to show a section and activate its button
+        function showSection(sectionId, buttonId) {
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById(sectionId).style.display = "block";
+            buttons.forEach(button => button.classList.remove("active"));
+            document.getElementById(buttonId).classList.add("active");
+        }
+
+        // Add click event listeners to buttons
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                const sectionId = `section${index + 1}`; // Get corresponding section ID
+                showSection(sectionId, button.id);
+            });
+        });
+
+        // Show section 1 initially (optional)
+        showSection("section1", "button1");
+    </script>
+</body>
+
+</html

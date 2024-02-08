@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    background-color: #e1e5ed;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.head {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets/bg1.jpeg) center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 990px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    position: fixed;
+    z-index: 999;
+
+}
+
+.navmenu {
+    position: inherit;
+    right: 0px;
+    margin-right: 85px
+}
+
+.logo {
+    align-self: flex-start;
+    margin: 15px;
+}
+
+.navbar img {
+    width: 30px;
+}
+
+.navcont {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-right: 50px;
+    color: white;
+}
+
+.navcont:hover {
+    transition: 0.5s ease;
+    color: brown;
+}
+
+.headcont {
+    margin-top: 420px;
+    letter-spacing: 6px;
+    color: white;
+}
+
+.headcont h1 {
+    font-size: 60px;
+    font-family: SpartanLimport;
+
+}
+
+.headcont h2 {
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 35px;
+    margin-bottom: 340px;
+}
+
+.lnr-chevron-down {
+    font-size: 40px;
+}
+
+.arrow {
+    animation-name: arrowdown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowdown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.linearline {
+    width: 100%;
+    background-image: linear-gradient(to left, #a07070, #bc8b8b, #8e4242, #a28f8f, #513434);
+    height: 5px;
+}
+
+.one {
+    width: 100%;
+    display: flex;
+    justify-content: p;
+    align-items: center;
+    overflow: hidden;
+}
+
+.onecont {
+    height: 280px;
+    width: 25%;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.onelogo {
+    margin-top: 40px;
+    width: 45px;
+}
+
+.onehead {
+    font-size: 15px;
+    letter-spacing: 13px;
+    word-spacing: 10px;
+    margin-top: 30px;
+    color: brown;
+    font-weight: 650;
+}
+
+.lorem {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: RalewayELimport;
+    line-height: 23px;
+}
+
+.onecont:hover {
+    background-color: rgb(101, 26, 26);
+    border-radius: 0px 40px 0px 40px;
+}
+
+.onecont:hover .onehead {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+.onecont:hover .lorem {
+    color: white;
+    transform: translateY(5px);
+    transition: all 0.5s ease-in-out;
+}
+
+.two {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.video {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.video video {
+    width: 920px;
+}
+
+.twocont {
+
+    margin-left: 30px;
+}
+
+.twohead {
+    font-family: RalewayELimport;
+    color: brown;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.two2head {
+    font-family: RalewayELimport;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.learnbutton {
+    padding: 12px;
+    text-align: center;
+    width: 140px;
+    margin-top: 50px;
+    font-size: 16.5px;
+    font-weight: 700;
+    border: 2px solid brown;
+}
+
+.learnbutton:hover {
+    transition: 0.3s ease;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+
+.three {
+    margin-top: 90px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url("assets/threebg.jpg") center/cover no-repeat;
+    height: 380px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.threehead {
+    color: #bd1220;
+    font-size: 30px;
+    font-family: SpartanLimport;
+    font-weight: 700;
+}
+
+.threecont {
+    margin-top: 30px;
+    color: white;
+    letter-spacing: 10px;
+    font-family: SpartanLimport;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    height: 400px;
+
+}
+
+.line {
+    margin-left: 10px;
+    border: 0.5px solid rgb(67, 66, 66);
+    height: 1px;
+    width: 800px;
+}
+
+.linef {
+    margin-left: 30px;
+    border: 0.5px solid rgb(67, 66, 66);
+    height: 1px;
+    width: 800px;
+}
+
+.roundbutton {
+    border: transparent;
+    border-radius: 100%;
+    margin-left: 40px;
+    box-shadow: 2px 2px 8px rgb(163, 177, 198, 0.6), -2px -2px 12px rgba(255, 255, 255, 0.5);
+}
+
+.roundbutton img {
+    width: 80px;
+}
+
+.roundbutton:hover {
+    cursor: pointer;
+}
+
+.cards {
+    margin-top: -100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col1 {
+    display: flex;
+    width: 100%;
+}
+
+.cardcont {
+    position: relative;
+    width: 25%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    margin-bottom: 80px;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.cardfront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.cardimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.cardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardback div {
+    text-align: center;
+}
+
+.bhead {
+
+    color: #bd1220;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.space {
+    margin-left: 100px;
+}
+
+.five {
+    width: 100%;
+    display: flex;
+}
+
+.form {
+    margin-left: 30px;
+}
+
+.fivehead {
+    color: #bd1220;
+    font-size: 25px;
+    font-family: SpartanLimport;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.fivetext {
+    display: block;
+}
