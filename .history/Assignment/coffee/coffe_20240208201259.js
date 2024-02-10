@@ -1,4 +1,3 @@
-// rating ractangle
 const rectangles = document.querySelectorAll('.rectangle');
 const submitButton = document.querySelector('.submit-button');
 

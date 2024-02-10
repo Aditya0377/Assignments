@@ -377,7 +377,7 @@ a {
 .five {
     width: 100%;
     display: flex;
-    margin-bottom: 80px;
+    height: 550px;
 }
 
 .form {
@@ -455,23 +455,9 @@ a {
 }
 
 .formbutton:hover {
-    background-color: #bc1221;
+    background-color: rgb(200, 43, 43);
     color: white;
     border-radius: 5px;
     transition: all 0.5s ease-in;
     border: none;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 40px -5px;
-}
-
-.six {
-    margin-top: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/Assignment/coffee/assets/bg\ 3.jpeg) center/cover no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 100px;
-    height: 400px;
 }

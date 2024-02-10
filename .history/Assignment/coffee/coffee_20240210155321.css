@@ -377,7 +377,6 @@ a {
 .five {
     width: 100%;
     display: flex;
-    margin-bottom: 80px;
 }
 
 .form {
@@ -465,13 +464,6 @@ a {
 }
 
 .six {
-    margin-top: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/Assignment/coffee/assets/bg\ 3.jpeg) center/cover no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 100px;
-    height: 400px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(./map4.jpeg) center/cover no-repeat;
 }

@@ -472,6 +472,5 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
-    height: 400px;
+    margin-bottom: 200px;
 }
