@@ -61,12 +61,6 @@
         <button id="sixthB" onclick="sixthfunc()">Click HERE</button>
 
     </div>
-    <div class="cont">
-        <p>Click here to get the sum of odd numbers from 10 to 30</p>
-        <p id="seventh"></p>
-        <button id="seventhB" onclick="seventhfunc()">Click HERE</button>
-
-    </div>
 
     <script>
         const arr = [];
@@ -131,20 +125,15 @@
 
         }
         function seventhfunc() {
-            let sum = 0;
+            let sum;
             for (i = 10; i <= 30; i++) {
-                function ODDnum(n) {
-                    return n % 2 !== 0;
-                }
-                if (ODDnum(i)) {
+                for (i / 2 != 0; ;) {
                     sum += i;
-                    document.getElementById("seventh").innerHTML = sum;
                 }
+
             }
 
         }
-
-
     </script>
 </body>
 
