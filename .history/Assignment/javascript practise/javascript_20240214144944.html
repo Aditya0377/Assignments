@@ -80,7 +80,7 @@
 
     </div>
     <div class="cont">
-        <p>Click here to reverse the string</p>
+        <p>Click here to check wether the inpute is palindrom or not</p>
         <p id="tenth"></p>
         <button id="tenthB" onclick="tenthfunc()">Click HERE</button>
 
@@ -111,15 +111,14 @@
             let text = document.getElementById("third");
             text.innerHTML = "";
             for (let i = 1; i <= 10; i++) {
-                text.innerHTML += i + " x 7 = " + (i * 7) + "<br>";
+
             }
         }
         function fourthfunc() {
-            let text = document.getElementById("fourth");
-            text.innerHTML = "";
+
             for (let i = 1; i <= 10; i++) {
                 for (let j = 1; j <= 10; j++) {
-                    text.innerHTML += i + " x " + j + " = " + (i * j) + "<br>";
+                    console.log(i + "*" + j + " = " + i * j)
                 }
             }
         }

@@ -73,26 +73,13 @@
         <button id="eightB" onclick="eightfunc()">Click HERE</button>
 
     </div>
-    <div class="cont">
-        <p>Click here to check wether the inpute is palindrom or not</p>
-        <p id="nine"></p>
-        <button id="nineB" onclick="ninefunc()">Click HERE</button>
-
-    </div>
-    <div class="cont">
-        <p>Click here to reverse the string</p>
-        <p id="tenth"></p>
-        <button id="tenthB" onclick="tenthfunc()">Click HERE</button>
-
-    </div>
 
     <script>
-
-
+        const arr = [];
+        const arr2 = [];
 
 
         function firstfunc() {
-            const arr = [];
             for (let i = 1; i <= 10; i++) {
                 arr.push(i);
                 document.getElementById("first").innerHTML = arr;
@@ -100,7 +87,6 @@
             }
         }
         function seondFunc() {
-            const arr2 = [];
             for (let i = 1; i < 100; i += 2) {
                 arr2.push(i);
                 document.getElementById("second").innerHTML = arr2;
@@ -108,18 +94,17 @@
             }
         }
         function thirdfunc() {
-            let text = document.getElementById("third");
-            text.innerHTML = "";
+            let text = "";
             for (let i = 1; i <= 10; i++) {
-                text.innerHTML += i + " x 7 = " + (i * 7) + "<br>";
+                text = 7 * i;
+                document.getElementById("third").innerHTML = (text);
             }
         }
         function fourthfunc() {
-            let text = document.getElementById("fourth");
-            text.innerHTML = "";
+
             for (let i = 1; i <= 10; i++) {
                 for (let j = 1; j <= 10; j++) {
-                    text.innerHTML += i + " x " + j + " = " + (i * j) + "<br>";
+                    console.log(i + "*" + j + " = " + i * j)
                 }
             }
         }
@@ -164,7 +149,7 @@
             }
 
         }
-        //the code  below is for even and odd number checking
+        //the code for belowo is for even and odd number checking
         function eightfunc() {
             let num = +prompt('Enter the number:');
             function odd(n) {
@@ -182,21 +167,8 @@
         // the function below is for checking whether the word is palindrom or not
         function ninefunc() {
             let text1 = prompt('Enter the text');
-            let text2 = text1.split("").reverse().join("");
-            if (text1 === text2) {
-                document.getElementById("nine").innerHTML = "It is a Palindrome";
-            }
-            else {
-                document.getElementById("nine").innerHTML = "It is not Palindrome";
-            }
-
-        }
-        //a function to reverse string
-        function tenthfunc() {
-            let text = prompt('Enter a string');
-            let text2 = text.split("").reverse().join("");
+            let text2 = text1.split("").reverse();
             console.log(text2);
-
         }
 
     </script>

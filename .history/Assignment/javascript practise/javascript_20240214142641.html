@@ -80,19 +80,18 @@
 
     </div>
     <div class="cont">
-        <p>Click here to reverse the string</p>
+        <p>Click here to check wether the inpute is palindrom or not</p>
         <p id="tenth"></p>
         <button id="tenthB" onclick="tenthfunc()">Click HERE</button>
 
     </div>
 
     <script>
-
-
+        const arr = [];
+        const arr2 = [];
 
 
         function firstfunc() {
-            const arr = [];
             for (let i = 1; i <= 10; i++) {
                 arr.push(i);
                 document.getElementById("first").innerHTML = arr;
@@ -100,7 +99,6 @@
             }
         }
         function seondFunc() {
-            const arr2 = [];
             for (let i = 1; i < 100; i += 2) {
                 arr2.push(i);
                 document.getElementById("second").innerHTML = arr2;
@@ -108,18 +106,17 @@
             }
         }
         function thirdfunc() {
-            let text = document.getElementById("third");
-            text.innerHTML = "";
+            let text = "";
             for (let i = 1; i <= 10; i++) {
-                text.innerHTML += i + " x 7 = " + (i * 7) + "<br>";
+                text = 7 * i;
+                document.getElementById("third").innerHTML = (text);
             }
         }
         function fourthfunc() {
-            let text = document.getElementById("fourth");
-            text.innerHTML = "";
+
             for (let i = 1; i <= 10; i++) {
                 for (let j = 1; j <= 10; j++) {
-                    text.innerHTML += i + " x " + j + " = " + (i * j) + "<br>";
+                    console.log(i + "*" + j + " = " + i * j)
                 }
             }
         }
@@ -191,12 +188,25 @@
             }
 
         }
-        //a function to reverse string
         function tenthfunc() {
-            let text = prompt('Enter a string');
-            let text2 = text.split("").reverse().join("");
-            console.log(text2);
 
+
+            function primetest(n) {
+                let result = 1;
+                if (n < 0) {
+                    throw new Error("Please provide a non negative number")
+                }
+                if (n == 0 || n == 1) {
+                    return 1;
+                }
+                for (let i = 2; i <= n; i++) {
+                    result *= i;
+                }
+                return result
+
+            }
+            let pnum = primetest(+prompt('Enter a number'));
+            console.log(pnum);
         }
 
     </script>
