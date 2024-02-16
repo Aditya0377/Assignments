@@ -85,18 +85,6 @@
         <button id="tenthB" onclick="tenthfunc()">Click HERE</button>
 
     </div>
-    <div class="cont">
-        <p>Click here to check whther the number is prime or not</p>
-        <p id="eleventh"></p>
-        <button id="eleventhB" onclick="elevenfunc()">Click HERE</button>
-
-    </div>
-    <div class="cont">
-        <p>Click here to print numebrs from 1 to 100 </p>
-        <p id="twelveth"></p>
-        <button id="twelveB" onclick="twelvefunc()">Click HERE</button>
-
-    </div>
 
     <script>
 
@@ -210,42 +198,7 @@
             document.getElementById("tenth").innerHTML = text2;
 
         }
-        //to check whether the number is prime or not 
-        function elevenfunc() {
-            let num = prompt('Enter the number')
-            function isprime(n) {
-                if (n <= 1) {
-                    return false;
-                }
-                for (let i = 2; i < n; i++) {
-                    if (n % i == 0) {
-                        return false;
-                    }
-                }
-                return true;
-            }
-            return document.getElementById("eleventh").innerHTML = isprime(num);
-        }
-        //	Write a program that prints the numbers from 1 to 100. But for multiples of three, print
-        // “Fizz” instead of the number, and for the multiples of five, print “Buzz”. For numbers that
-        // are multiples of both three and five, print “FizzBuzz”.
-        function twelvefunc() {
-
-            for (let i = 1; i <= 100; i++) {
-                let text = document.getElementById("twelveth");
-                if (i % 3 === 0 && i % 5 === 0) {
-                    text.innerHTML += "Fizzbuzz" + "<br>";
-                }
-                else if (i % 3 === 0) {
-                    text.innerHTML += "Fizz" + "<br>";
-                }
-                else if (i % 5 === 0) {
-                    text.innerHTML += "Buzz" + "<br>";
-                }
-                text.innerHTML = i;
-            }
-
-        }
+        //
     </script>
 </body>
 
