@@ -110,13 +110,13 @@
 
     </div>
     <div class="cont">
-        <p>Click here to swap the firsgt and the last letter</p>
+        <p>Click here to find the second largest numebr in array </p>
         <p id="fifteenth"></p>
         <button id="fifteenB" onclick="fiftfunc()">Click HERE</button>
 
     </div>
     <div class="cont">
-        <p>Click here for verbing </p>
+        <p>Click here to find the second largest numebr in array </p>
         <p id="sixteenth"></p>
         <button id="sixteenB" onclick="sixtfunc()">Click HERE</button>
 
@@ -312,29 +312,14 @@
         //●	   Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its
         //  end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged.
         function sixtfunc() {
-            let result = document.getElementById("sixteenth");
             let end1 = "ing";
             let end2 = "ly";
             let text = prompt('Enter your text');
             text = Array.from(text);
             let check = text.splice((text.length - 3),);
-            text = text.join("");
-            check = check.join("");
-            text = text + check;
-            console.log(text);
-            console.log(check);
-            if (check == "ing") {
-                result.innerHTML = text + "ly";
-            }
-            else if (check != "ing" && text.length > 3) {
-                result.innerHTML = text + "ing";
-            }
-            else if (text.length <= 3) {
-                result.innerHTML = text;
-            }
+
 
         }
-        
 
     </script>
 </body>

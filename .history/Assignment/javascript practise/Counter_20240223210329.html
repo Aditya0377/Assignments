@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    P {
+        font-size: 30px;
+    }
+
+    div {
+        margin-top: 50px;
+    }
+
+    button {
+        color: white;
+        background-color: red;
+        border: 1px solid;
+        font-size: 20px;
+        padding: 5px;
+
+    }
+</style>
+
+<body>
+    <p>This is the counter button</p>
+    <p id="number"></p>
+    <div>
+        <button onclick="counterincrement()">Count</button>
+        <button onclick="counterdecrement()">Decrease</button>
+        <button onclick="counterreset()">Reset</button>
+    </div>
+</body>
+
+</html>

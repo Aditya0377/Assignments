@@ -98,27 +98,9 @@
 
     </div>
     <div class="cont">
-        <p>Click here to double the array numbers(put "," between numbers) </p>
+        <p>Click here to double the array numbers </p>
         <p id="thirteenth"></p>
         <button id="thirteenB" onclick="thirtfunc()">Click HERE</button>
-
-    </div>
-    <div class="cont">
-        <p>Click here to find the second largest numebr in array </p>
-        <p id="fourteenth"></p>
-        <button id="fourteenB" onclick="fourtfunc()">Click HERE</button>
-
-    </div>
-    <div class="cont">
-        <p>Click here to swap the firsgt and the last letter</p>
-        <p id="fifteenth"></p>
-        <button id="fifteenB" onclick="fiftfunc()">Click HERE</button>
-
-    </div>
-    <div class="cont">
-        <p>Click here for verbing </p>
-        <p id="sixteenth"></p>
-        <button id="sixteenB" onclick="sixtfunc()">Click HERE</button>
 
     </div>
 
@@ -274,68 +256,14 @@
         }
         //29.	 Write a function that takes an array of numbers as input and returns a new array with all the numbers doubled.
         function thirtfunc() {
-            let input = prompt("Enter the desired numbers");
-            const arr = input.split(",");
-            console.log(arr);
-            arr.forEach(doubleFunction)
-            function doubleFunction(item, index, arr) {
-                arr[index] = item * 2;
-            }
-            document.getElementById('thirteenth').innerHTML = arr;
+            let input = +prompt("Enter the desired numbers");
+            const arr = input.split("");
+            arr.foreach()
+
 
 
 
         }
-        // 30.	Write a function that takes an array of numbers as input and returns the second-highest number in the array.
-        function fourtfunc() {
-            let input = prompt("Enter the desired numbers");
-            const arr = input.split(",");
-            function sortNumbersAscending(array) {
-                array.sort((a, b) => a - b);
-                return array;
-            }
-            document.getElementById("fourteenth").innerHTML = arr[arr.length - 1];
-        }
-        //●	Create a function called mixUp. It should take in two strings, and return the concatenation of the two strings (separated by a space)
-        //          slicing out and swapping the first 2 characters of each. You can assume that the strings are at least 2 characters long. For example:
-        //         mixUp('mix', pod'): Output should be— 'pox mid'
-        // mixUp('dog', 'dinner'): Output should be—  'dig donner'
-        function fiftfunc() {
-            let st1 = prompt('Enter the firasat string');
-            let st2 = prompt('Enter the second string');
-            let arr = st1 + st2;
-            arr = Array.from(arr)
-            arr[0] = arr.splice((arr.length - 1), 1, arr[0]);
-            arr = arr.join("");
-            console.log(arr);
-        }
-        //●	   Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its
-        //  end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged.
-        function sixtfunc() {
-            let result = document.getElementById("sixteenth");
-            let end1 = "ing";
-            let end2 = "ly";
-            let text = prompt('Enter your text');
-            text = Array.from(text);
-            let check = text.splice((text.length - 3),);
-            text = text.join("");
-            check = check.join("");
-            text = text + check;
-            console.log(text);
-            console.log(check);
-            if (check == "ing") {
-                result.innerHTML = text + "ly";
-            }
-            else if (check != "ing" && text.length > 3) {
-                result.innerHTML = text + "ing";
-            }
-            else if (text.length <= 3) {
-                result.innerHTML = text;
-            }
-
-        }
-        
-
     </script>
 </body>
 
