@@ -127,12 +127,6 @@
         <button id="seventeenB" onclick="seventefunc()">Click HERE</button>
 
     </div>
-    <div class="cont">
-        <p>Click to add the numbers of a number</p>
-        <p id="eighteenth"></p>
-        <button id="eightteenB" onclick="eightefunc()">Click HERE</button>
-
-    </div>
 
     <script>
 
@@ -354,33 +348,18 @@
             const newarr = [];
             console.log(array);
             console.log(initin);
-            function topositive(array) {
+            function isNegative(array) {
                 for (let i = 0; i < array.length; i++) {
                     if (array[i] < 0) {
 
                         newarr.push(array[i] * -1);
                     }
                     else {
-                        newarr.push(array[i] * 1);
+                        newarr.push(array[i]);
                     }
-
                 }
-                return document.getElementById("seventeenth").innerHTML = newarr;
-
+                document.getElementById("seventeenth").innerhtml = newarr;
             }
-            document.getElementById("seventeenth").innerHTML = topositive(array);
-            // console.log(newarr);
-        }
-        //11.	Calculate the sum of digits of a positive integer number. (The number should contain at least 4 digits. 
-        //For example if the number is 4673, the output should be 20 i.e. addition of the digits.)
-        function eightefunc() {
-            let num = prompt("enter the number=");
-            const arr = num.split("");
-            console.log(arr);
-            for (let i = 0; i < arr.length; i++) {
-                arr[0] = Number(arr[0]) + Number(arr[i]);
-            }
-            document.getElementById("eighteenth").innerHTML = arr.slice(0, 1);
         }
 
 

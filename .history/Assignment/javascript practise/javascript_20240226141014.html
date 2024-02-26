@@ -128,7 +128,7 @@
 
     </div>
     <div class="cont">
-        <p>Click to add the numbers of a number</p>
+        <p>Click here to convert an array of positive and negative elements only positive </p>
         <p id="eighteenth"></p>
         <button id="eightteenB" onclick="eightefunc()">Click HERE</button>
 
@@ -377,10 +377,6 @@
             let num = prompt("enter the number=");
             const arr = num.split("");
             console.log(arr);
-            for (let i = 0; i < arr.length; i++) {
-                arr[0] = Number(arr[0]) + Number(arr[i]);
-            }
-            document.getElementById("eighteenth").innerHTML = arr.slice(0, 1);
         }
 
 

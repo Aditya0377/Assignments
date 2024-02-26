@@ -50,8 +50,8 @@
     <p>This is the counter button</p>
     <p id="number"></p>
     <div>
-        <button onclick="counterincrement();generateRandomColor()">Count</button>
-        <button onclick="counterdecrement();generateRandomColor()">Decrease</button>
+        <button onclick="counterincrement();">Count</button>
+        <button onclick="counterdecrement();">Decrease</button>
         <button onclick="counterreset()">Reset</button>
     </div>
     <script>
@@ -71,13 +71,13 @@
             count = 0;
             document.getElementById("number").innerHTML = count;
         }
-        // function generateRandomColor() {
-        //     const r = Math.floor(Math.random() * 256);
-        //     const g = Math.floor(Math.random() * 256);
-        //     const b = Math.floor(Math.random() * 256);
-        //     const randomcolor = `rgb(${r}, ${g}, ${b})`;
-        //     document.getElementById("number").innerHTML.style.color = randomcolor;
-        // }
+        function generateRandomColor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            const randomcolor = `rgb(${r}, ${g}, ${b})`;
+            document.getElementById("number").innerHTML = randomColor;
+        }
 
 
     </script>
