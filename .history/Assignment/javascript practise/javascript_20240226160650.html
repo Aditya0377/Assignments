@@ -140,9 +140,9 @@
 
     </div>
     <div class="cont">
-        <p>Click to shift the array to the right</p>
-        <p id="twentyth"></p>
-        <button id="twentyB" onclick="twentyfunc()">Click HERE</button>
+        <p>Click to shift the array to the left</p>
+        <p id="nineteenth"></p>
+        <button id="ninetteenB" onclick="ninetefunc()">Click HERE</button>
 
     </div>
 
@@ -405,17 +405,6 @@
             console.log(arr);
             document.getElementById("nineteenth").innerHTML = arr;
 
-        }
-        //13.	Rotate an array to the right 1 position (For example if array elements are 2,8,3 after rotation it should be 3,2,8)
-        function twentyfunc() {
-            let num = prompt("Enetr a number");
-            const arr = num.split("");
-            console.log(arr);
-            let temp = arr.pop();
-            console.log(temp);
-            arr.unshift(temp);
-            console.log(arr);
-            document.getElementById("nineteenth").innerHTML = arr;
         }
 
     </script>
