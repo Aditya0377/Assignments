@@ -145,12 +145,6 @@
         <button id="twentyB" onclick="twentyfunc()">Click HERE</button>
 
     </div>
-    <div class="cont">
-        <p>Click to get the maximum number of an array </p>
-        <p id="twentyone"></p>
-        <button id="twentyoneB" onclick="twentyofunc()">Click HERE</button>
-
-    </div>
 
     <script>
 
@@ -423,21 +417,7 @@
             console.log(arr);
             document.getElementById("nineteenth").innerHTML = arr;
         }
-        //14.	Find the maximum number in an array of numbers (Take a minimum of 8 numbers in the array).
-        function twentyofunc() {
-            let num = prompt("Enetr a number");
-            const arr = num.split("");
-            console.log(arr);
-            let max = arr[0];
-            for (let i = 1; i < arr.length; i++) {
-                if (arr[i] > max) {
-                    max = arr[i];
-                    document.getElementById("twentyone").innerHTML = max;
-                }
-
-            }
-
-        }
+        //14.
     </script>
 </body>
 

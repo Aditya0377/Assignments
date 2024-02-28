@@ -22,8 +22,7 @@
         margin-top: 200px;
     }
 
-    P,
-    br {
+    P {
         font-size: 30px;
     }
 
@@ -61,16 +60,12 @@
         function counterincrement() {
             count++;
             document.getElementById("number").innerHTML = count;
-            if (count > 0) {
-                document.getElementById("number").style.color = "green";
-            }
+            let color = document.getElementById("numebr").innerHTML;
         }
         function counterdecrement() {
             count--;
             document.getElementById("number").innerHTML = count;
-            if (count < 0) {
-                document.getElementById("number").style.color = "red";
-            }
+            document.getElementById("numebr").innerHTML
         }
         function counterreset() {
             count = 0;
@@ -78,10 +73,7 @@
         }
         function generateRandomColor() {
             if (count > 0) {
-                document.get.style.color = "green";
-            }
-            else if (count < 0) {
-
+                document.getElementById("number").style.backgroundColor = "green";
             }
         }
 

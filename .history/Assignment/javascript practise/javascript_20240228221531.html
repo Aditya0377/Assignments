@@ -146,7 +146,7 @@
 
     </div>
     <div class="cont">
-        <p>Click to get the maximum number of an array </p>
+        <p>Click to shift the array to the right</p>
         <p id="twentyone"></p>
         <button id="twentyoneB" onclick="twentyofunc()">Click HERE</button>
 
@@ -428,15 +428,6 @@
             let num = prompt("Enetr a number");
             const arr = num.split("");
             console.log(arr);
-            let max = arr[0];
-            for (let i = 1; i < arr.length; i++) {
-                if (arr[i] > max) {
-                    max = arr[i];
-                    document.getElementById("twentyone").innerHTML = max;
-                }
-
-            }
-
         }
     </script>
 </body>

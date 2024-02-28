@@ -24,20 +24,16 @@
         <button id="BackCO" onclick="backchange()">Click here</button>
     </div>
     <script>
-        let currentIndex = 0;
         function backchange() {
-            const colors = ["red", "blue", "pink", "green", "brown", "yellow"];
-            if (currentIndex == 5) {
-                document.body.style.backgroundColor = colors[currentIndex];
-                currentIndex = 0;
+            const arr = ["red", "blue", "pink", "green", "brown", "yellow"]
+            for (let i = 0; i <= 6; i++) {
+                if (i = 5) {
+                    document.body.style.backgroundColor = arr[i];
+                    i = 0;
+                    return;
+                }
+                document.body.style.backgroundColor = arr[i];
             }
-            else {
-                document.body.style.backgroundColor = colors[currentIndex];
-                currentIndex++;
-            }
-
-
-
         }
     </script>
 </body>
