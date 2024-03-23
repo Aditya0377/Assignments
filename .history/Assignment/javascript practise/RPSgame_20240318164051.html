@@ -57,11 +57,8 @@
 
         </div>
         <div class="secconatiner">
-            <div id="youroption">Your choice</div>&nbsp;:&nbsp;
-            <div id="pcchoice">PC Choice</div>
-        </div>
-        <div class="seccontainer">
-            <P id="result"></P>
+            <div class="youroption"></div>
+            <div class="pcoption"></div>
         </div>
     </div>
 
@@ -70,26 +67,7 @@
 
     <script>
         function rpsGame(n) {
-            const arr = ["Rock", "Paper", "Scissors"];
-            let len = arr.length;
-            let pcchoice = arr[Math.floor(Math.random() * len)];
-            console.log(pcchoice);
-            if (n == pcchoice) {
-                document.getElementById('youroption').innerHTML = n;
-                document.getElementById('pcchoice').innerHTML = pcchoice;
-                return document.getElementById("result").innerHTML = `It's a Tie`
-            }
-            else if (n == 'Rock' && pcchoice == 'Scissors' || n == 'Paper' && pcchoice == 'Rock' || n == 'Scissors' && pcchoice == 'Paper') {
-                document.getElementById('youroption').innerHTML = n;
-                document.getElementById('pcchoice').innerHTML = pcchoice;
-                return document.getElementById("result").innerHTML = `You Won!!`
-            }
-            else {
-                document.getElementById('youroption').innerHTML = n;
-                document.getElementById('pcchoice').innerHTML = pcchoice;
-                return document.getElementById("result").innerHTML = `You Lost`
-            }
-
+            console.log(n);
         }
     </script>
 </body>

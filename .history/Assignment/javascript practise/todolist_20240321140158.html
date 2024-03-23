@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <style>
+        .container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        input {
+            width: 300px;
+        }
+
+        button {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" name="" id="input">
+        <button id="submit">Submit</button>
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+
+        let text = "";
+        document.getElementById("submit").addEventListener("click", todolist);
+        function todolist() {
+            let input = document.getElementById("input").value;
+            text += `<li> ${input.trim()} </li>`;
+            document.getElementById("list").innerHTML = text;
+            document.getElementById("input").value = "";
+        }
+    </script>
+</body>
+
+</html>

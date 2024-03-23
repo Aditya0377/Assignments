@@ -60,9 +60,6 @@
             <div id="youroption">Your choice</div>&nbsp;:&nbsp;
             <div id="pcchoice">PC Choice</div>
         </div>
-        <div class="seccontainer">
-            <P id="result"></P>
-        </div>
     </div>
 
 
@@ -74,22 +71,9 @@
             let len = arr.length;
             let pcchoice = arr[Math.floor(Math.random() * len)];
             console.log(pcchoice);
-            if (n == pcchoice) {
-                document.getElementById('youroption').innerHTML = n;
-                document.getElementById('pcchoice').innerHTML = pcchoice;
-                return document.getElementById("result").innerHTML = `It's a Tie`
+            if (n == 'Rock' && pcchoice == 'Scissors' || n == 'Paper' && pcchoice == 'Rock' || n == 'Scissors' && pcchoice == 'Paper') {
+                return document
             }
-            else if (n == 'Rock' && pcchoice == 'Scissors' || n == 'Paper' && pcchoice == 'Rock' || n == 'Scissors' && pcchoice == 'Paper') {
-                document.getElementById('youroption').innerHTML = n;
-                document.getElementById('pcchoice').innerHTML = pcchoice;
-                return document.getElementById("result").innerHTML = `You Won!!`
-            }
-            else {
-                document.getElementById('youroption').innerHTML = n;
-                document.getElementById('pcchoice').innerHTML = pcchoice;
-                return document.getElementById("result").innerHTML = `You Lost`
-            }
-
         }
     </script>
 </body>
