@@ -24,7 +24,7 @@
             width: 800px;
             height: 550px;
             display: flex;
-            border-radius: 10px;
+
             align-items: center;
             flex-direction: column;
 
@@ -65,7 +65,7 @@
 
         #Output {
             padding: 5px;
-            background-color: #FFDDE2FF;
+            background-color: rgb(161, 155, 155);
             margin-top: 50px;
             width: 400px;
             border-radius: 15px;
@@ -74,11 +74,6 @@
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-
-        }
-
-        #reset {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -88,52 +83,27 @@
         <h2>
             Text Editor
         </h2>
-        <input type="text" id="input" placeholder="  Enter your text to edit" onkeyup='textedit()'>
+        <input type="text" id="input" placeholder="  Enter your text to edit" onkeyup="texteditor()">
         <div class="buttoncont">
-            <button onclick="uppercase()">ABC</button>
-            <button onclick="lowercase()">abc</button>
-            <button onclick="capitalize()">Abc</button>
-            <button onclick="bold()"><b>B</b></button>
-            <button onclick="italic()"><i>I</i></button>
-            <button onclick="underline()">U</button>
-            <button onclick="strike()">STRIKE</button>
+            <button onclick=" ">ABC</button>
+            <button>abc</button>
+            <button>Abc</button>
+            <button><b>B</b></button>
+            <button><i>I</i></button>
+            <button>U</button>
+            <button>STRIKE</button>
+
         </div>
         <div id="Output">OutPut</div>
-        <button id="reset" onclick="reset()">Reset</button>
     </div>
 
     <script>
-        function textedit() {
+        function texteditor() {
             let input = document.getElementById("input").value;
             document.getElementById("Output").innerHTML = input;
         }
-        let changestyle = document.getElementById("Output");
-
         function uppercase() {
-            changestyle.style.textTransform = "uppercase";
-
-        }
-        function lowercase() {
-            changestyle.style.textTransform = "lowercase";
-
-        }
-        function capitalize() {
-            changestyle.style.textTransform = "capitalize";
-        }
-        function bold() {
-            changestyle.style.fontWeight = 600;
-        }
-        function italic() {
-            changestyle.style.fontStyle = "italic";
-        }
-        function underline() {
-            changestyle.style.textDecoration = "underline";
-        }
-        function strike() {
-            changestyle.style.textDecoration = "line-through";
-        }
-        function reset() {
-            changestyle.style = "none";
+            document.getElementById("Ouput").innerHTML.style.
         }
 
     </script>

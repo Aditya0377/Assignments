@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2a363b;
+        }
+
+        .container {
+            margin-top: 100px;
+            width: 800px;
+            height: 580px;
+            background-color: #99b898;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .head {
+            margin-top: 30px;
+            color: #3f525b;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .outputc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .output {
+            margin-top: 30px;
+            width: 400px;
+            height: 55px;
+            border-radius: 10px;
+            background-color: #2a363b;
+            font-size: 30px;
+            color: #ff847c;
+        }
+
+        #reset {
+            width: 60px;
+            height: 60px;
+            margin-top: 30px;
+            margin-left: 10px;
+            font-size: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #2a363b;
+            color: aliceblue;
+        }
+
+        #reset:hover {
+            cursor: pointer;
+        }
+
+        #input {
+            margin-top: 30px;
+            width: 490px;
+            height: 55px;
+            border-radius: 10px;
+            background-color: #2a363b;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            font-size: 30px;
+            color: #ff847c;
+        }
+
+        #check {
+            width: 70px;
+            height: 35px;
+            padding: 5px;
+            margin-top: 30px;
+            font-size: 19px;
+            border: none;
+            border-radius: 10px;
+            background-color: #e84a5f;
+            color: aliceblue;
+            transform: translateX(-45px);
+            display: none;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/edd85780d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Random Captcha</h1>
+        </div>
+        <div class="outputc">
+            <div class="output" id="soutput"></div>
+            <button id="reset" onclick="captchaGeneration()"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div class="outputc">
+            <input type="text" id="input" onkeyup="checkappear()">
+            <button id="check">Check</button>
+        </div>
+        <p id="info"></p>
+    </div>
+
+
+
+
+
+    <script>
+        function checkappear() {
+            document.getElementById('check').style.display = 'inline';
+            document.getElementById('input').style.transform = 'translateX(35px)';
+        }
+        function captchaGeneration() {
+            let char = "";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -65,7 +65,7 @@
 
         #Output {
             padding: 5px;
-            background-color: #FFDDE2FF;
+            background-color: rgb(161, 155, 155);
             margin-top: 50px;
             width: 400px;
             border-radius: 15px;
@@ -75,10 +75,6 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
 
-        }
-
-        #reset {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -99,14 +95,11 @@
             <button onclick="strike()">STRIKE</button>
         </div>
         <div id="Output">OutPut</div>
-        <button id="reset" onclick="reset()">Reset</button>
+        <div class="button"></div>
     </div>
 
     <script>
-        function textedit() {
-            let input = document.getElementById("input").value;
-            document.getElementById("Output").innerHTML = input;
-        }
+        function textedit() { let input = document.getElementById("input").value; document.getElementById("Output").innerHTML = input; };
         let changestyle = document.getElementById("Output");
 
         function uppercase() {
@@ -131,9 +124,6 @@
         }
         function strike() {
             changestyle.style.textDecoration = "line-through";
-        }
-        function reset() {
-            changestyle.style = "none";
         }
 
     </script>
