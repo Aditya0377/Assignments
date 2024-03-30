@@ -134,8 +134,9 @@
             captcha += char.charAt(Math.floor(Math.random() * 27) + 32);
             captcha += char.charAt(Math.floor(Math.random() * 27) + 32);
             captcha += char.charAt(Math.floor(Math.random() * 11) + 62);
-
-            document.getElementById("soutput").innerHTML = captcha;
+            console.log(captcha);
+            captcha = captcha.split(" ");
+            console.log(captcha);
         }
         function checkcaptcha() {
             let check = document.getElementById("soutput").innerHTML;
