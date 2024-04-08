@@ -45,21 +45,8 @@
 
     <script>
         function quizScore() {
-            let ans1 = document.querySelector('input[name="ans1"]:checked').value;
-            let ans2 = document.querySelector('input[name="ans2"]:checked').value;
-            let ans3 = document.querySelector('input[name="ans3"]:checked').value;
-            let score = 0;
-            if (ans1 == "Aluminium" && ans2 == "Bamboo" && ans3 == "Hydrogen") {
-                score = 3;
-            }
-            else {
-                if (ans1 != "Aluminium" && ans2 != "Bamboo" && ans3 != "Hydrogen") {
-                    score = 0;
-                }
-            }
-
-
-            alert(`Your score out of 3 is ${score}`);
+            let ans1 = document.querySelector('input[name="ans1"]:checked');
+            console.log(ans1);
         }
     </script>
 </body>
