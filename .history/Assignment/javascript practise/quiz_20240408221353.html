@@ -44,27 +44,19 @@
     <p><button class="submit" onclick="quizScore()">Submit</button></p>
 
     <script>
-
+        let score = 0;
         function quizScore() {
-            let score = 0;
             let ans1 = document.querySelector('input[name="ans1"]:checked').value;
             let ans2 = document.querySelector('input[name="ans2"]:checked').value;
             let ans3 = document.querySelector('input[name="ans3"]:checked').value;
 
-            if (document.querySelector('input[name="ans1"]:checked').value && document.querySelector('input[name="ans2"]:checked').value && document.querySelector('input[name="ans3"]:checked').value) {
-
-                if (ans1 == "Aluminium") {
-                    score++;
-                }
-                if (ans2 == "Bamboo") {
-                    score++
-                }
-                if (ans3 == "Hydrogen") {
-                    score++
-                }
+            if (ans1 == "Aluminium" && ans2 == "Bamboo" && ans3 == "Hydrogen") {
+                score = 3;
             }
             else {
-                alert("ALL QUESTIONS ARE COMPULSOIORY")
+                if (ans1 != "Aluminium" && ans2 != "Bamboo" && ans3 != "Hydrogen") {
+                    score = 0;
+                }
             }
 
 
