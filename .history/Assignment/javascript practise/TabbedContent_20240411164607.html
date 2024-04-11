@@ -65,10 +65,10 @@
 <body>
     <div class="container">
         <div class="head">
-            <div class="tabHead" onclick="changeTab()">Pasta</div>
-            <div class="tabHead" onclick="changeTab()">Pizza</div>
-            <div class="tabHead" onclick="changeTab()">Salad</div>
-            <div class="tabHead" onclick="changeTab()">Soup</div>
+            <div class="tabHead" onclick="changeTab()" id="Pasta">Pasta</div>
+            <div class="tabHead" onclick="changeTab()" id="Pizza">Pizza</div>
+            <div class="tabHead" onclick="changeTab()" id="Salad">Salad</div>
+            <div class="tabHead" onclick="changeTab()" id="Soup">Soup</div>
         </div>
         <div class="content"></div>
     </div>
@@ -76,9 +76,7 @@
 
     <script>
         function changeTab() {
-            let tab = event.target;
-            tab.className = "tabHeadActive";
-
+            let
         }
 
     </script>
