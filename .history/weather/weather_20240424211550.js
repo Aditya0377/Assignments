@@ -1,0 +1,21 @@
+let input = document.getElementById("input");
+let city = input.value;
+let temp = document.getElementById("temp");
+let weather = document.getElementById("weather");
+let apiKey = "19f4935c8a63c46b4f5daedba0587955";
+let cityName = input.value;
+
+
+async function weatherFetch(cityName) {
+    let weatherData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`);
+    console.log(weatherData);
+    let jsonData = await weatherData.json();
+    console.log(jsonData);
+    city.innerhtml = cityName;
+    temp.innerHTML = jsonData.main.temp;
+}
+
+function getData() {
+
+    weatherFetch(cityName);
+}

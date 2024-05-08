@@ -82,9 +82,12 @@
 
     <script>
         function changeTab() {
-            document.querySelectorAll("#Pizza", "#Pasta", "#Salad", "#Soup").className = "tabHead";
-            let tab = event.target;
+            // document.querySelectorAll("#Pizza", "#Pasta", "#Salad", "#Soup").className = "tabHead";
+            let colorchange = () => {
+                let tab = event.target;
+            }
             tab.className = "tabHeadActive";
+            setTimeout(colorchange(), 1000);
         }
 
     </script>

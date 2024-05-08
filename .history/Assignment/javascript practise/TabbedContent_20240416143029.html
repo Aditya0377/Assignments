@@ -83,8 +83,11 @@
     <script>
         function changeTab() {
             document.querySelectorAll("#Pizza", "#Pasta", "#Salad", "#Soup").className = "tabHead";
-            let tab = event.target;
-            tab.className = "tabHeadActive";
+
+            setTimeout(() => {
+                let tab = event.target;
+                tab.className = "tabHeadActive";
+            }, 1000);
         }
 
     </script>

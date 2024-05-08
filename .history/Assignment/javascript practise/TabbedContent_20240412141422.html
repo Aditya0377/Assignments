@@ -42,7 +42,6 @@
             border-radius: 10px 10px 0px 0px;
             margin-right: 5px;
             text-align: center;
-            font-weight: 600;
         }
 
         .tabHeadActive {
@@ -54,11 +53,6 @@
             border-radius: 10px 10px 0px 0px;
             margin-right: 5px;
             text-align: center;
-            font-weight: 600;
-        }
-
-        .tabHeadActive:hover {
-            cursor: pointer;
         }
 
         .tabHead:hover {
@@ -71,10 +65,10 @@
 <body>
     <div class="container">
         <div class="head">
-            <div class="tabHead" onclick="changeTab()" id="Pasta">Pasta</div>
-            <div class="tabHead" onclick="changeTab()" id="Pizza">Pizza</div>
-            <div class="tabHead" onclick="changeTab()" id="Salad">Salad</div>
-            <div class="tabHead" onclick="changeTab()" id="Soup">Soup</div>
+            <div class="tabHead" onclick="changeTab()">Pasta</div>
+            <div class="tabHead" onclick="changeTab()">Pizza</div>
+            <div class="tabHead" onclick="changeTab()">Salad</div>
+            <div class="tabHead" onclick="changeTab()">Soup</div>
         </div>
         <div class="content"></div>
     </div>
@@ -82,9 +76,10 @@
 
     <script>
         function changeTab() {
-            document.querySelectorAll("#Pizza", "#Pasta", "#Salad", "#Soup").className = "tabHead";
+            document.querySelectorAll()
             let tab = event.target;
             tab.className = "tabHeadActive";
+
         }
 
     </script>

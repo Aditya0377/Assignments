@@ -42,7 +42,6 @@
             border-radius: 10px 10px 0px 0px;
             margin-right: 5px;
             text-align: center;
-            font-weight: 600;
         }
 
         .tabHeadActive {
@@ -54,11 +53,6 @@
             border-radius: 10px 10px 0px 0px;
             margin-right: 5px;
             text-align: center;
-            font-weight: 600;
-        }
-
-        .tabHeadActive:hover {
-            cursor: pointer;
         }
 
         .tabHead:hover {
@@ -82,9 +76,11 @@
 
     <script>
         function changeTab() {
-            document.querySelectorAll("#Pizza", "#Pasta", "#Salad", "#Soup").className = "tabHead";
+
             let tab = event.target;
             tab.className = "tabHeadActive";
+            let parent = document.querySelector("head");
+            parent.querySelectorAll("*").className = "tabHead";
         }
 
     </script>
